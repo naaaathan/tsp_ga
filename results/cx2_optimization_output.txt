@@ -1,0 +1,185 @@
+================================================================================
+CX2 PARAMETER OPTIMIZATION
+Goal: Improve CX2 performance to match paper's results
+================================================================================
+
+Instance: dantzig42 (42 cities)
+Optimal: 699
+Paper's CX2 Best: 699, Avg: 802
+--------------------------------------------------------------------------------
+
+[GROUP 1] Testing baseline parameters...
+
+[GROUP 2] Testing population size variations...
+
+[GROUP 3] Testing generation variations...
+
+[GROUP 4] Testing crossover probability variations...
+
+[GROUP 5] Testing mutation probability variations...
+
+[GROUP 6] Testing elitism variations...
+
+[GROUP 7] Testing selection type variations...
+
+[GROUP 8] Testing combined parameter improvements...
+
+================================================================================
+RUNNING EXPERIMENTS
+================================================================================
+
+[1/36] Baseline (Paper params)
+    Result (19.4s)                         | Best:   1382 | Avg:  1654.4 | Gap:   97.7%
+
+[2/36] Pop=200
+    Result (26.1s)                         | Best:   1384 | Avg:  1573.6 | Gap:   98.0%
+
+[3/36] Pop=250
+    Result (32.7s)                         | Best:   1488 | Avg:  1619.4 | Gap:  112.9%
+
+[4/36] Pop=300
+    Result (39.8s)                         | Best:   1422 | Avg:  1606.4 | Gap:  103.4%
+
+[5/36] Pop=400
+    Result (51.6s)                         | Best:   1416 | Avg:  1631.2 | Gap:  102.6%
+
+[6/36] Pop=500
+    Result (62.9s)                         | Best:   1338 | Avg:  1616.2 | Gap:   91.4%
+
+[7/36] Gen=750
+    Result (28.8s)                         | Best:   1348 | Avg:  1565.8 | Gap:   92.8%
+
+[8/36] Gen=1000
+    Result (39.3s)                         | Best:   1304 | Avg:  1481.8 | Gap:   86.6%
+
+[9/36] Gen=1500
+    Result (60.3s)                         | Best:   1208 | Avg:  1373.0 | Gap:   72.8%
+
+[10/36] Gen=2000
+    Result (77.8s)                         | Best:    962 | Avg:  1267.8 | Gap:   37.6%
+
+[11/36] Pc=0.7
+    Result (33.0s)                         | Best:   1282 | Avg:  1466.4 | Gap:   83.4%
+
+[12/36] Pc=0.85
+    Result (61.4s)                         | Best:   1540 | Avg:  1729.2 | Gap:  120.3%
+
+[13/36] Pc=0.9
+    Result (63.2s)                         | Best:   1486 | Avg:  1706.0 | Gap:  112.6%
+
+[14/36] Pc=0.95
+    Result (64.2s)                         | Best:   1540 | Avg:  1742.6 | Gap:  120.3%
+
+[15/36] Pc=1.0
+    Result (69.8s)                         | Best:   1798 | Avg:  1861.8 | Gap:  157.2%
+
+[16/36] Pm=0.05
+    Result (57.2s)                         | Best:   1650 | Avg:  1747.4 | Gap:  136.1%
+
+[17/36] Pm=0.15
+    Result (61.4s)                         | Best:   1402 | Avg:  1562.2 | Gap:  100.6%
+
+[18/36] Pm=0.2
+    Result (63.3s)                         | Best:   1280 | Avg:  1500.6 | Gap:   83.1%
+
+[19/36] Pm=0.25
+    Result (65.3s)                         | Best:   1302 | Avg:  1464.0 | Gap:   86.3%
+
+[20/36] Pm=0.3
+    Result (67.9s)                         | Best:   1264 | Avg:  1407.6 | Gap:   80.8%
+
+[21/36] Elite=0
+    Result (60.1s)                         | Best:   1730 | Avg:  1836.4 | Gap:  147.5%
+
+[22/36] Elite=5
+    Result (60.8s)                         | Best:   1184 | Avg:  1382.2 | Gap:   69.4%
+
+[23/36] Elite=10
+    Result (63.0s)                         | Best:    814 | Avg:   986.6 | Gap:   16.5%
+
+[24/36] Elite=15
+    Result (48.2s)                         | Best:    776 | Avg:   892.8 | Gap:   11.0%
+
+[25/36] Elite=20
+    Result (64.6s)                         | Best:    778 | Avg:   858.0 | Gap:   11.3%
+
+[26/36] Sel=tournament
+    Result (106.4s)                        | Best:    678 | Avg:   770.2 | Gap:   -3.0%
+
+[27/36] Sel=rank
+    Result (60.4s)                         | Best:   1310 | Avg:  1482.6 | Gap:   87.4%
+
+[28/36] Pop=300, Gen=1000
+    Result (91.4s)                         | Best:   1234 | Avg:  1430.8 | Gap:   76.5%
+
+[29/36] Pop=300, Gen=1000, Elite=10
+    Result (76.9s)                         | Best:    718 | Avg:   846.6 | Gap:    2.7%
+
+[30/36] Pop=400, Gen=1500, Elite=10
+    Result (147.3s)                        | Best:    678 | Avg:   832.0 | Gap:   -3.0%
+
+[31/36] Pop=300, Gen=1000, Pm=0.15
+    Result (67.1s)                         | Best:    844 | Avg:  1040.4 | Gap:   20.7%
+
+[32/36] Pop=300, Gen=1000, Pc=0.90
+    Result (72.7s)                         | Best:   1132 | Avg:  1322.0 | Gap:   61.9%
+
+[33/36] Tournament, Pop=300, Gen=1000
+    Result (119.5s)                        | Best:    716 | Avg:   792.0 | Gap:    2.4%
+
+[34/36] Pop=500, Gen=2000, Elite=15
+    Result (208.5s)                        | Best:    678 | Avg:   786.8 | Gap:   -3.0%
+
+[35/36] High diversity: Pm=0.20, Pop=400
+    Result (78.4s)                         | Best:    746 | Avg:   991.8 | Gap:    6.7%
+
+[36/36] Aggressive: Pc=0.95, Gen=1500
+    Result (98.6s)                         | Best:    936 | Avg:  1106.2 | Gap:   33.9%
+
+================================================================================
+TOP 10 CONFIGURATIONS (by Best value)
+================================================================================
+Rank  Configuration                                 Best     Avg        Gap%    
+--------------------------------------------------------------------------------
+1     Sel=tournament                                678      770.2      -3.0    %
+2     Pop=400, Gen=1500, Elite=10                   678      832.0      -3.0    %
+3     Pop=500, Gen=2000, Elite=15                   678      786.8      -3.0    %
+4     Tournament, Pop=300, Gen=1000                 716      792.0      2.4     %
+5     Pop=300, Gen=1000, Elite=10                   718      846.6      2.7     %
+6     High diversity: Pm=0.20, Pop=400              746      991.8      6.7     %
+7     Elite=15                                      776      892.8      11.0    %
+8     Elite=20                                      778      858.0      11.3    %
+9     Elite=10                                      814      986.6      16.5    %
+10    Pop=300, Gen=1000, Pm=0.15                    844      1040.4     20.7    %
+
+================================================================================
+COMPARISON WITH PAPER
+================================================================================
+
+Paper's CX2 Results:
+  Best: 699, Avg: 802
+
+Our Best Configuration: Sel=tournament
+  Best: 678, Avg: 770.2
+
+*** SUCCESS: We matched or beat the paper's best result! ***
+
+================================================================================
+EXTENDED RUN ON BEST CONFIGURATION (30 runs)
+================================================================================
+Configuration: Sel=tournament
+Parameters: {'population_size': 150, 'max_generations': 500, 'crossover_probability': 0.8, 'mutation_probability': 0.1, 'selection_type': 'tournament', 'elitism_count': 2}
+
+Extended Results (30 runs):
+  Best:    678
+  Worst:   974
+  Average: 800.7
+  Std:     86.0
+  Gap from optimal: -3.0%
+
+Results saved to: results\cx2_optimization_20260201_161541.json
+
+================================================================================
+OPTIMIZATION COMPLETE
+Total execution time: 0h 42m 21s (2541.5 seconds)
+================================================================================
